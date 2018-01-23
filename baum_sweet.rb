@@ -10,7 +10,6 @@ class BaumSweet
 
     def baum_sweet(num)
         if num > 0 
-            puts "Generating Baum-Sweet sequence of #{num}."
             self.generate_sequence(num)
         else
             puts "#{num} is an invalid number to generate sequence."
@@ -25,7 +24,7 @@ class BaumSweet
             sequence << self.contains_odd_zero_block(curr_bin_num)
             i += 1
         end
-        puts "sequence for #{num}: #{sequence}"
+        puts "Baum-Sweet sequence for #{num}: #{sequence}"
     end
 
     def generate_binary_representation(num)
