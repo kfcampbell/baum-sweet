@@ -35,17 +35,17 @@ class BaumSweet
             return [1]
         end
 
-        stack = []
         temp = num
-        bin = []
+        stack = []
+        binary_representation = []
         while temp >= 1
             stack.push(temp)
             temp = temp / 2
         end
         while stack.count > 0
-            bin.push(stack.pop % 2)
+            binary_representation.push(stack.pop % 2)
         end
-        return bin
+        return binary_representation
     end
 
     def contains_odd_zero_block(binary_num)
