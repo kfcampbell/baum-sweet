@@ -5,60 +5,22 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug Local File",
-            "type": "Ruby",
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
             "request": "launch",
-            "cwd": "${workspaceRoot}",
-            "program": "${workspaceRoot}/baum_sweet.rb"
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/BaumSweetCSharp/bin/Debug/netcoreapp1.1/BaumSweetCSharp.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/BaumSweetCSharp",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
         },
         {
-            "name": "Listen for rdebug-ide",
-            "type": "Ruby",
+            "name": ".NET Core Attach",
+            "type": "coreclr",
             "request": "attach",
-            "cwd": "${workspaceRoot}",
-            "remoteHost": "127.0.0.1",
-            "remotePort": "1234",
-            "remoteWorkspaceRoot": "${workspaceRoot}"
-        },
-        {
-            "name": "Rails server",
-            "type": "Ruby",
-            "request": "launch",
-            "cwd": "${workspaceRoot}",
-            "program": "${workspaceRoot}/bin/rails",
-            "args": [
-                "server"
-            ]
-        },
-        {
-            "name": "RSpec - all",
-            "type": "Ruby",
-            "request": "launch",
-            "cwd": "${workspaceRoot}",
-            "program": "${workspaceRoot}/bin/rspec",
-            "args": [
-                "-I",
-                "${workspaceRoot}"
-            ]
-        },
-        {
-            "name": "RSpec - active spec file only",
-            "type": "Ruby",
-            "request": "launch",
-            "cwd": "${workspaceRoot}",
-            "program": "${workspaceRoot}/bin/rspec",
-            "args": [
-                "-I",
-                "${workspaceRoot}",
-                "${file}"
-            ]
-        },
-        {
-            "name": "Cucumber",
-            "type": "Ruby",
-            "request": "launch",
-            "cwd": "${workspaceRoot}",
-            "program": "${workspaceRoot}/bin/cucumber"
+            "processId": "${command:pickProcess}"
         }
     ]
 }

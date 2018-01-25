@@ -1,0 +1,8 @@
+/Users/Keegan.Campbell@alaskaair.com/Personal/dev/baum-sweet/BaumSweetCSharp/bin/Debug/netcoreapp1.1/BaumSweetCSharp.deps.json
+/Users/Keegan.Campbell@alaskaair.com/Personal/dev/baum-sweet/BaumSweetCSharp/bin/Debug/netcoreapp1.1/BaumSweetCSharp.runtimeconfig.json
+/Users/Keegan.Campbell@alaskaair.com/Personal/dev/baum-sweet/BaumSweetCSharp/bin/Debug/netcoreapp1.1/BaumSweetCSharp.runtimeconfig.dev.json
+/Users/Keegan.Campbell@alaskaair.com/Personal/dev/baum-sweet/BaumSweetCSharp/bin/Debug/netcoreapp1.1/BaumSweetCSharp.dll
+/Users/Keegan.Campbell@alaskaair.com/Personal/dev/baum-sweet/BaumSweetCSharp/bin/Debug/netcoreapp1.1/BaumSweetCSharp.pdb
+/Users/Keegan.Campbell@alaskaair.com/Personal/dev/baum-sweet/BaumSweetCSharp/obj/Debug/netcoreapp1.1/BaumSweetCSharp.AssemblyInfo.cs
+/Users/Keegan.Campbell@alaskaair.com/Personal/dev/baum-sweet/BaumSweetCSharp/obj/Debug/netcoreapp1.1/BaumSweetCSharp.dll
+/Users/Keegan.Campbell@alaskaair.com/Personal/dev/baum-sweet/BaumSweetCSharp/obj/Debug/netcoreapp1.1/BaumSweetCSharp.pdb
