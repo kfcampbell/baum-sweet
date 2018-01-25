@@ -10,6 +10,7 @@ class BaumSweet
 
     def baum_sweet(num)
         if num > 0 
+            puts "Generating Baum-Sweet sequence of #{num}."
             self.generate_sequence(num)
         else
             puts "#{num} is an invalid number to generate sequence."
@@ -18,33 +19,32 @@ class BaumSweet
 
     def generate_sequence(num)
         sequence = []
-        i = 0
-        while i <= num
+        (0..num).each do |i|
             curr_bin_num = self.generate_binary_representation(i)
             sequence << self.contains_odd_zero_block(curr_bin_num)
-            i += 1
         end
-        puts "Baum-Sweet sequence for #{num}: #{sequence}"
+        puts "sequence for #{num}: #{sequence}"
     end
 
     def generate_binary_representation(num)
-        if num == 0
-            return [0, 0]
-        elsif num == 1
+        case num
+        when 0
+            return [0,0]
+        when 1
             return [1]
+        else
+            stack = []
+            temp = num
+            binary_representation = []
+            while temp >= 1
+                stack.push(temp)
+                temp = temp / 2
+            end
+            while stack.count > 0
+                binary_representation.push(stack.pop % 2)
+            end
+            return binary_representation
         end
-
-        temp = num
-        stack = []
-        binary_representation = []
-        while temp >= 1
-            stack.push(temp)
-            temp = temp / 2
-        end
-        while stack.count > 0
-            binary_representation.push(stack.pop % 2)
-        end
-        return binary_representation
     end
 
     def contains_odd_zero_block(binary_num)
