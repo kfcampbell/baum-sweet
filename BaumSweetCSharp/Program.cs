@@ -16,7 +16,7 @@ namespace BaumSweetCSharp
         static void Main(string[] args)
         {
             BaumSweet bs = new BaumSweet(20);
-            bs.startProcedure();
+            bs.startGame();
         }
     }
 }
